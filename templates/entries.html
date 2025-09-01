@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Past Entries</h2>
+<ul>
+  {% for mood, reflection, created_at in entries %}
+    <li>
+      <b>{{ created_at }}</b> - <i>{{ mood }}</i><br>
+      {{ reflection }}
+    </li>
+  {% endfor %}
+</ul>
+
+<h3>💡 AI Tip for You</h3>
+<p>{{ ai_tip }}</p>
+{% endblock %}
+
+

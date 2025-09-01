@@ -1,0 +1,13 @@
+mood-journal/
+│── app.py               # Flask entry point
+│── config.py            # DB + app configs
+│── requirements.txt     # dependencies
+│── static/              # CSS, JS, images
+│   ├── style.css
+│── templates/           # HTML pages
+│   ├── base.html
+│   ├── index.html       # homepage (log mood)
+│   ├── entries.html     # display past entries
+│── models.py            # DB models
+│── utils.py             # AI helper functions
+│── migrations/          # DB migrations (optional)

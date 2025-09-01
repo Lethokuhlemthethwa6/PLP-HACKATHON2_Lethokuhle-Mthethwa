@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Log Your Mood</h2>
+<form method="POST" action="{{ url_for('add_entry') }}">
+  <label>Mood:</label>
+  <input type="text" name="mood" required>
+  <label>Reflection:</label>
+  <textarea name="reflection"></textarea>
+  <button type="submit">Save</button>
+</form>
+{% endblock %}
